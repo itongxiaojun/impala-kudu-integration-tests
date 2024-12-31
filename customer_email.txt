@@ -1,0 +1,23 @@
+尊敬的客户，
+
+我们已编写了一个程序来模拟和复现您你们系统遇到的的问题。该程序包含以下脚本文件：
+- deploy_and_run.sh：部署和运行测试环境
+- impala_kudu_integration.sh：Impala与Kudu的集成配置
+- insert_kudu.sh：Kudu数据插入操作
+- test_kudu_timeout.sh：测试Kudu超时问题
+
+然而，在我们的测试环境中，我们无法复现您所描述的问题。为了帮助进一步调查，我们愿意提供这些代码供您在自己的环境中进行测试。
+
+请按照以下步骤进行测试：
+1. 确保您的环境已正确配置Impala和Kudu
+2. 运行deploy_and_run.sh脚本部署测试环境
+3. 运行test_kudu_timeout.sh脚本进行测试
+4. 检查kudu_timeout_results.csv文件中的测试结果
+5. 建议优化QUERY_TIMEOUT_S参数以获得更好的性能表现
+
+如果您在测试过程中遇到任何问题，或者能够成功复现该问题，请随时与我们联系。我们将非常乐意协助您进一步调查和解决此问题。
+
+感谢您的理解与配合。
+
+此致，
+Hadoop生态技术支持团队
